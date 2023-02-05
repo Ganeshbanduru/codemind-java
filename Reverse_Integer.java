@@ -1,14 +1,14 @@
 import java.util.*;
-class ganesh{
+class Demo{
     public static void main(String args[]){
-		Scanner sc=new Scanner(System.in);
-		int num,cou=0;
-		num=sc.nextInt();
-		int k=num;
-		while(num!=0){
-		    cou=cou*10+num%10;
-		    num/=10;
-		}
-		System.out.println(cou);
+        Scanner sc=new Scanner(System.in);
+        int num=sc.nextInt();
+        int rev=0;
+        while(num!=0){
+            int d=num%10;
+            rev=rev*10+d;
+            num/=10;
+        }
+        System.out.println(rev);
     }
-  }
+}
